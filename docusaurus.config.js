@@ -23,7 +23,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'cbw-dev', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-sample', // Usually your repo name.
+  projectName: 'docusaurus-POC', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
