@@ -47,6 +47,15 @@ const config = {
         sidebarPath: require.resolve('./testSidebars.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'intro',
+        path: 'Introduction',
+        routeBasePath: 'Introduction',
+        sidebarPath: require.resolve('./introSidebars.js'),
+      },
+    ],
   ],
 
   presets: [
@@ -75,21 +84,30 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'CBW\'s Docusaurus POC',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Bioinformatics.ca Logo',
           src: 'img/logo.svg',
         },
         items: [
+          // Introduction nav bar links
+          {to: '/Introduction/intro', label: 'Introduction', position: 'left'},
+          {to: '/Introduction/course-schedule', label: 'Schedule', position: 'left'},
+          {to: '/Introduction/course-materials', label: 'Downloads', position: 'left'},
+
+          {to: '/general-formatting', label: 'Formatting Examples', position: 'left'},
+
+          {to: '/Testing/intro', label: 'Test', position: 'left'},
+          
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs\' Tutorial',
           },
-          {to: '/Testing/intro', label: 'Test', position: 'left'},
+          
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/cbw-dev/docusaurus-POC',
             label: 'GitHub',
             position: 'right',
           },
