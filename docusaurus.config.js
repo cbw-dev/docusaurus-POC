@@ -135,6 +135,48 @@ const config = {
             ],
           },
           {
+            title: 'Introduction',
+            items: [
+              {
+                label: 'Intro Page',
+                to: '/Introduction/intro',
+              },
+              {
+                label: 'Meet Your Faculty',
+                to: '/Introduction/meet-your-fac',
+              },
+              {
+                label: 'Course Schedule',
+                to: '/Introduction/course-schedule',
+              },
+              {
+                label: 'Course Materials',
+                to: '/Introduction/course-materials',
+              },
+              {
+                label: 'Class Photo',
+                to: '/Introduction/class-photo',
+              },
+              {
+                label: '\*General Formatting\*',
+                to: '/Introduction/general-formatting',
+              },
+            ],
+          },
+          {
+            title: 'Content',
+            items: [
+              {
+                label: 'Day 1',
+                to: '/Content/day-1',
+              },
+              {
+                label: 'Day 2',
+                to: '/Content/day-2',
+              },
+            ],
+          },
+          {
             title: 'Community',
             items: [
               {
