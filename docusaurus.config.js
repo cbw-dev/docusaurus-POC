@@ -37,6 +37,18 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'test',
+        path: 'Testing',
+        routeBasePath: 'Testing',
+        sidebarPath: require.resolve('./testSidebars.js'),
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -89,6 +101,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {to: '/Testing/intro', label: 'Test', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
