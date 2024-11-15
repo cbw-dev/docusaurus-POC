@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
-# General Formatting Examples
+# *General Formatting Examples*
 
 Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
 
@@ -37,7 +37,7 @@ Let's see how to [Create a page](./docs/tutorial-basics/create-a-page.md).
 Let's see how to [Create a page](./docs/tutorial-basics/create-a-page.md).
 ```
 
-**Result:** Let's see how to [Create a page](./docs/tutorial-basics/create-a-page).
+**Result:** Let's see how to [Create a page](../docs/tutorial-basics/create-a-page).
 
 ## Images
 

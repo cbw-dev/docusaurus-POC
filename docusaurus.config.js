@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CBW\'s Docusaurus POC',
+  tagline: 'INR 2024 - but not really',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -56,6 +56,15 @@ const config = {
         sidebarPath: require.resolve('./introSidebars.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'content',
+        path: 'Content',
+        routeBasePath: 'Content',
+        sidebarPath: require.resolve('./contentSidebars.js'),
+      },
+    ],
   ],
 
   presets: [
@@ -95,7 +104,7 @@ const config = {
           {to: '/Introduction/course-schedule', label: 'Schedule', position: 'left'},
           {to: '/Introduction/course-materials', label: 'Downloads', position: 'left'},
 
-          {to: '/general-formatting', label: 'Formatting Examples', position: 'left'},
+          {to: '/Content/day-1', label: 'Content', position: 'left'},
 
           {to: '/Testing/intro', label: 'Test', position: 'left'},
           

@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Course Schedule
 
 *[Copy pasted in markdown file]*
