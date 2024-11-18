@@ -88,6 +88,7 @@ const config = {
   ],
 
   themeConfig:
+
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
@@ -96,8 +97,9 @@ const config = {
         title: 'CBW\'s Docusaurus POC',
         logo: {
           alt: 'Bioinformatics.ca Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
+        
         items: [
           // Introduction nav bar links
           {to: '/Introduction/intro', label: 'Introduction', position: 'left'},
@@ -180,16 +182,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Bioinformatics.ca',
+                href: 'https://bioinformatics.ca/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@bioinformaticsdotca',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://ca.linkedin.com/school/bioinformaticsdotca/',
               },
             ],
           },
@@ -198,7 +200,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/cbw-dev/',
               },
             ],
           },

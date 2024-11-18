@@ -4,62 +4,27 @@ sidebar_position: 6
 
 # *General Formatting Examples*
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
-
-## Front Matter
-
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
-
-```text title="my-doc.md"
-// highlight-start
----
-id: my-doc-id
-title: My document title
-description: My document description
-slug: /my-custom-url
----
-// highlight-end
-
-## Markdown heading
-
-Markdown text with [links](./hello.md)
-```
+See the [Docs's Tutorial - Markdown Features](../docs/tutorial-basics/create-a-page) for a bit more info!
 
 ## Links
 
-Regular Markdown links are supported, using url paths or relative file paths.
-
 ```md
-Let's see how to [Create a page](./docs/tutorial-basics/create-a-page.md).
-```
-
-```md
-Let's see how to [Create a page](./docs/tutorial-basics/create-a-page.md).
+Let's see how to [Create a page](./docs/tutorial-basics/create-a-page).
 ```
 
 **Result:** Let's see how to [Create a page](../docs/tutorial-basics/create-a-page).
 
 ## Images
 
-Regular Markdown images are supported.
-
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
-
 ```md
-![Docusaurus logo](/img/docusaurus.png)
+![Docusaurus logo](/img/docusaurus-social-card.jpg)
 ```
 
-![Docusaurus logo](/img/docusaurus.png)
-
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
-
-```md
-![Docusaurus logo](./img/docusaurus.png)
-```
+![Docusaurus logo](/img/docusaurus-social-card.jpg)
 
 ## Code Blocks
 
-Markdown code blocks are supported with Syntax highlighting.
+Markdown code blocks are supported with **Syntax highlighting**.
 
 ````md
 ```jsx title="src/components/HelloDocusaurus.js"
@@ -92,6 +57,8 @@ This action is dangerous
 
 :::
 ```
+  
+**NOTE: For some reason, [] appear around "My tip" and "Take care" in the rendered code (above), they should not be there.**
 
 :::tip My tip
 
@@ -104,6 +71,45 @@ Use this awesome feature option
 This action is dangerous
 
 :::
+
+**Admonition below requires [] brackets around title**
+:::note[Your Title **with** some _Markdown_ `syntax`!]
+
+Some **content** with some _Markdown_ `syntax`.
+
+:::
+
+### More Admonition Examples
+
+:::info
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::warning
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::::info[Parent]
+
+Parent content
+
+::::danger[Child]
+
+Child content
+
+:::tip[Deep Child]
+
+Deep child content
+
+:::
+
+::::
+
+:::::
 
 ## MDX and React Components
 
@@ -150,3 +156,22 @@ export const Highlight = ({children, color}) => (
 This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
 This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+
+
+## Admonitions with MDX
+
+import Tabs from '@theme/Tabs';
+
+import TabItem from '@theme/TabItem';
+
+:::tip[Use tabs in admonitions]
+
+<Tabs>
+  <TabItem value="python" label="Python">print("Hello World")</TabItem>
+  <TabItem value="R" label="R">print("Hello World")</TabItem>
+  <TabItem value="bash" label="Bash">echo "Hello World"</TabItem>
+</Tabs>
+
+:::
+
+To see more admonition customizations, see here https://docusaurus.io/docs/markdown-features/admonitions#usage-in-jsx. 
