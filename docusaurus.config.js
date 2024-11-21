@@ -37,7 +37,9 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [
+  themes: ['@docusaurus/theme-live-codeblock'],
+  
+  plugins: [ '@datalayer/jupyter-docusaurus-plugin',
     [
       '@docusaurus/plugin-content-docs',
       {
